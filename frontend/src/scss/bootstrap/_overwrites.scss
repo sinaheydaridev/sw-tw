@@ -1,0 +1,13 @@
+@import "../mixins";
+@import "varibles";
+
+.container {
+  @include maxWidth(map-get($grid-breakpoints, xs)) {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+.fs-6 {
+  font-size: 13px !important;
+}

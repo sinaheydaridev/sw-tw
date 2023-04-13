@@ -1,0 +1,41 @@
+$grid-gutter-width: 30px !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+$container-max-widths: (
+  xs: 440px,
+  sm: 540px,
+  md: 720px,
+  lg: 1100px,
+  xl: 1280px,
+  xxl: 1420px,
+) !default;
+
+$theme-colors: (
+  "primary": #1d9bf0,
+  "dark": #000000,
+  "danger": #ec0000,
+  "light": #ffffff,
+  "secondary-light": #e8f4ff,
+  "secondary-main": #57738d,
+  "secondary-dark": #57738d,
+  "grey-800": #3a3a3a,
+  "grey-700": #3a3a3ad0,
+  "grey-600": #3a3a3ab9,
+  "grey-500": #3a3a3a9d,
+  "grey-400": #3a3a3a86,
+  "grey-300": #3a3a3a63,
+  "grey-200": #3a3a3a44,
+  "grey-100": #3a3a3a2a,
+  "grey-0": #7e7e7e,
+);
+
+$grid-columns:                12; // customize space between .col classes
+$grid-gutter-width:           13px;

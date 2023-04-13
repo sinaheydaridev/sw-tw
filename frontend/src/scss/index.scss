@@ -1,0 +1,24 @@
+// pages
+@import "./pages/account/auth";
+// components
+@import "./components/shared/button";
+@import "./components/shared/quickView";
+@import "./components/shared/backdrop";
+@import "./components/shared/textField";
+@import "./components/shared/select";
+@import "./components/shared/pickFile";
+@import "./components/layouts/authLayout";
+@import "./components/layouts/appLayouts.scss";
+@import "./components/tweets/whatsHapping";
+// utils
+@import "./utils";
+@import "./globals";
+
+body {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none !important;
+  color: currentColor !important;
+}

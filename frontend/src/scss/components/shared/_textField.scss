@@ -1,0 +1,25 @@
+@import "../../mixins";
+
+.text-field {
+  height: 50px;
+
+  input,
+  select {
+    border-radius: 5px;
+    @include transition(border-color, 50ms);
+    border: 2px solid map-get($theme-colors, grey-100);
+    outline: none;
+    &:focus {
+      @include transition(border-color, 50ms);
+      border: 2px solid map-get($theme-colors, primary);
+    }
+  }
+
+  input.error {
+    border: 1px solid map-get($theme-colors, danger) !important;
+    &:focus {
+      @include transition(border-color, 50ms);
+      border: 2px solid map-get($theme-colors, danger) !important;
+    }
+  }
+}

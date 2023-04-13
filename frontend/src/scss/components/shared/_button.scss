@@ -1,0 +1,56 @@
+@import "../../bootstrap/varibles";
+@import "../../mixins";
+
+.button {
+  background-color: transparent;
+  outline: none;
+  border-radius: 20px;
+  height: 44px;
+  font-weight: 600;
+  @include transition(all, 150ms);
+}
+
+button.none{
+  background-color: transparent;
+  border: none;
+  color: map-get($theme-colors, "primary");
+}
+
+.button.primary-contained {
+  background-color: map-get($theme-colors, "primary");
+  border: none;
+  color: map-get($theme-colors, "light");
+}
+.button.primary-outlined {
+  border: 1px solid map-get($theme-colors, "primary");
+}
+
+.button.secondary-outlined,
+button.grey-outlined {
+  border: 1px solid map-get($theme-colors, "grey-200");
+}
+.button.secondary-contained,
+.button.grey-contained {
+  background-color: map-get($theme-colors, "grey-200");
+  border: none;
+  color: map-get($theme-colors, "light");
+}
+
+.button.dark-contained {
+  background-color: map-get($theme-colors, "dark");
+  border: none;
+  color: map-get($theme-colors, "light");
+}
+.button.dark-outlined {
+  border: 1px solid map-get($theme-colors, "grey-500");
+}
+
+.button.secondary-outlined:hover,
+.button.button.primary-outlined:hover {
+  background-color: map-get($theme-colors, "secondary-light");
+}
+
+.button.grey-outlined:hover,
+.button.dark-outlined {
+  background-color: map-get($theme-colors, "grey-300");
+}

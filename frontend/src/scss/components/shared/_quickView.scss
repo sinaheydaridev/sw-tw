@@ -1,0 +1,42 @@
+@import "../../mixins";
+
+.quick-view {
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+
+  .wrapper {
+    height: 500px;
+    width: 600px;
+    border-radius: 14px;
+    overflow: hidden;
+    @include maxWidth(map-get($grid-breakpoints, md)) {
+      height: 90%;
+      width: 80%;
+    }
+    @include maxWidth(map-get($grid-breakpoints, sm)) {
+      height: 100%;
+      width: 100%;
+      border-radius: 0;
+    }
+    .header {
+      height: 60px;
+    }
+    .content {
+      height: calc(100% - 140px);
+      overflow-y: auto;
+    }
+    .footer {
+      height: 75px;
+    }
+    .close{
+        height: 33px;
+        width: 33px;
+    }
+    .save{
+      height: 35px;
+      width: 70px;
+    }
+  }
+}
